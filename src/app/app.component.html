@@ -1,0 +1,9 @@
+<div>
+  <div class="input_container">
+    <input type="text" id="input-string" #input class="input_string"/>
+    <button (click)="validateString(input.value)" class="validate_button">Validate String</button>
+  </div>
+  <div class="result_container">
+    {{result}}
+  </div>
+</div>

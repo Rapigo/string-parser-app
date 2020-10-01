@@ -1,0 +1,20 @@
+.input_string{
+    width: 30%;
+    height: 26px;
+}
+.validate_button{
+    color: black;
+    margin-left: 26px;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.result_container{
+    border: 1px solid black;
+    margin: 13px;
+    display: inline-block;
+    padding: 5px;
+}
+.input_container{
+    margin: 13px;
+}
