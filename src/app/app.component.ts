@@ -39,7 +39,7 @@ function isValid(input:string) {
   }
   var queryObj:any = new Object() ;
   queryObj.query = result ;
-  return JSON.stringify(queryObj, null, 2);
+  return JSON.stringify(queryObj, null, " ");
 }
 
 function findValid(input:string, firstIndex:number, lastIndex:number, mainObj:any){
@@ -106,10 +106,8 @@ function findValid(input:string, firstIndex:number, lastIndex:number, mainObj:an
       var input2 = input.substring(closeIndex+4, lastIndex) ;
       var obj1:any = new Object() ;
       obj1 = findValid(input1, 0, input1.length-1, obj1) ;
-      console.log(obj1) ;
       var obj2:any = new Object() ;
       obj2 = findValid(input2, 0, input2.length-1, obj2) ;
-      console.log(obj2) ;
       if(input.charAt(closeIndex+1)=='&'){
         mainObj.and = [] ;
         mainObj.and.push(obj1) ;
